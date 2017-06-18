@@ -6,21 +6,142 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>722</width>
-    <height>632</height>
+    <width>635</width>
+    <height>623</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>TabWidget</string>
   </property>
   <property name="currentIndex">
-   <number>2</number>
+   <number>4</number>
   </property>
-  <widget class="QWidget" name="tab_2">
+  <widget class="QWidget" name="tabSale">
    <attribute name="title">
     <string>Sale</string>
    </attribute>
-   <layout class="QGridLayout" name="gridLayout_3">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0" colspan="2">
+     <widget class="QGroupBox" name="gbSelectCustomer">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Select Customer</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="lVillage">
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Village</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="cbVillage"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="lName">
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="cbName"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Mobile No: &lt;LOAD&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="title">
+       <string>Select Items</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="2" column="3">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>Weight</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <widget class="QLineEdit" name="lineEdit_5"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QRadioButton" name="radioButton_3">
+         <property name="text">
+          <string>GOLD</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QRadioButton" name="radioButton_4">
+         <property name="text">
+          <string>SILVER</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>Description</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1" colspan="4">
+        <widget class="QLineEdit" name="lineEdit_6"/>
+       </item>
+       <item row="2" column="0" colspan="3">
+        <widget class="QComboBox" name="comboBox">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>0</height>
+          </size>
+         </property>
+         <item>
+          <property name="text">
+           <string>SELECT ITEM</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0" rowspan="2">
+     <widget class="QTableWidget" name="tableWidget"/>
+    </item>
     <item row="2" column="1">
      <widget class="QGroupBox" name="groupBox">
       <property name="minimumSize">
@@ -49,7 +170,7 @@
        <item row="2" column="0">
         <widget class="QLabel" name="label_5">
          <property name="text">
-          <string>Darab RS</string>
+          <string>Darab Rs</string>
          </property>
         </widget>
        </item>
@@ -59,7 +180,7 @@
        <item row="3" column="0">
         <widget class="QLabel" name="label_6">
          <property name="text">
-          <string>Remark</string>
+          <string>Description</string>
          </property>
         </widget>
        </item>
@@ -70,60 +191,6 @@
         <widget class="QRadioButton" name="radioButton_2">
          <property name="text">
           <string>w/o Darab</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item row="0" column="0">
-     <widget class="QGroupBox" name="gbSelectCustomer">
-      <property name="minimumSize">
-       <size>
-        <width>0</width>
-        <height>120</height>
-       </size>
-      </property>
-      <property name="title">
-       <string>Select Customer</string>
-      </property>
-      <layout class="QGridLayout" name="gridLayout_2">
-       <item row="0" column="0">
-        <widget class="QLabel" name="lVillage">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>16777215</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>Village</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QComboBox" name="cbVillage"/>
-       </item>
-       <item row="0" column="2">
-        <widget class="QLabel" name="lName">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>16777215</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>Name</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="3">
-        <widget class="QComboBox" name="cbName"/>
-       </item>
-       <item row="1" column="0">
-        <widget class="QLabel" name="label_3">
-         <property name="text">
-          <string>Mobile No: </string>
          </property>
         </widget>
        </item>
@@ -141,118 +208,41 @@
       <property name="title">
        <string>Payment</string>
       </property>
-      <widget class="QLabel" name="label_7">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>50</y>
-         <width>59</width>
-         <height>14</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_8">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>80</y>
-         <width>59</width>
-         <height>14</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_9">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>110</y>
-         <width>59</width>
-         <height>14</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="QPushButton" name="pbAddNewCustomer">
-      <property name="text">
-       <string>Add New Customer</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QGroupBox" name="groupBox_3">
-      <property name="title">
-       <string>Select Items</string>
-      </property>
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="5" column="2" colspan="3">
-        <widget class="QLineEdit" name="lineEdit_6"/>
-       </item>
-       <item row="2" column="1" colspan="2">
-        <widget class="QComboBox" name="comboBox">
-         <property name="minimumSize">
-          <size>
-           <width>150</width>
-           <height>0</height>
-          </size>
-         </property>
-         <item>
-          <property name="text">
-           <string>SELECT ITEM</string>
-          </property>
-         </item>
-        </widget>
-       </item>
-       <item row="2" column="3">
-        <widget class="QLabel" name="label_11">
-         <property name="text">
-          <string>Weight</string>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="1">
-        <widget class="QLabel" name="label_10">
-         <property name="text">
-          <string>Comment</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="4">
-        <widget class="QLineEdit" name="lineEdit_5"/>
-       </item>
-       <item row="5" column="0">
-        <widget class="QRadioButton" name="radioButton_4">
-         <property name="text">
-          <string>SILVER</string>
-         </property>
-        </widget>
-       </item>
+      <layout class="QGridLayout" name="gridLayout_8">
        <item row="2" column="0">
-        <widget class="QRadioButton" name="radioButton_3">
+        <widget class="QLabel" name="label_9">
          <property name="text">
-          <string>GOLD</string>
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="text">
+          <string>Done</string>
          </property>
         </widget>
        </item>
       </layout>
      </widget>
     </item>
-    <item row="2" column="0" rowspan="2">
-     <widget class="QTableWidget" name="tableWidget"/>
-    </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="tab">
+  <widget class="QWidget" name="tabBalance">
    <attribute name="title">
     <string>Balance</string>
    </attribute>
@@ -322,101 +312,52 @@
    <attribute name="title">
     <string>Stock</string>
    </attribute>
-   <widget class="QTableView" name="tvStock">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>170</y>
-      <width>256</width>
-      <height>192</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="radioButton_6">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>80</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>GOLD</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="radioButton_7">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>80</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>SILVER</string>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="comboBox_3">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>110</y>
-      <width>79</width>
-      <height>22</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_4">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>130</y>
-      <width>113</width>
-      <height>22</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_12">
-    <property name="geometry">
-     <rect>
-      <x>240</x>
-      <y>120</y>
-      <width>59</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Weight</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_13">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>110</y>
-      <width>59</width>
-      <height>14</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Select item</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_14">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>440</y>
-      <width>59</width>
-      <height>14</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>total weight</string>
-    </property>
-   </widget>
+   <layout class="QGridLayout" name="gridLayout_7">
+    <item row="2" column="4">
+     <widget class="QLineEdit" name="lineEdit_4"/>
+    </item>
+    <item row="1" column="1" rowspan="2" colspan="2">
+     <widget class="QComboBox" name="comboBox_3"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_14">
+      <property name="text">
+       <string>Total Weight</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QRadioButton" name="radioButton_6">
+      <property name="text">
+       <string>GOLD</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2" colspan="2">
+     <widget class="QRadioButton" name="radioButton_7">
+      <property name="text">
+       <string>SILVER</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_13">
+      <property name="text">
+       <string>Select item</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="5">
+     <widget class="QTableView" name="tvStock"/>
+    </item>
+    <item row="1" column="3" rowspan="2">
+     <widget class="QLabel" name="label_12">
+      <property name="text">
+       <string>Weight</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QWidget" name="tabPersonal">
    <attribute name="title">
@@ -426,7 +367,7 @@
     <item row="0" column="0">
      <widget class="QLabel" name="label_15">
       <property name="text">
-       <string>Withdrawl amount</string>
+       <string>Withdrawl Amount</string>
       </property>
      </widget>
     </item>
@@ -436,7 +377,7 @@
     <item row="1" column="0">
      <widget class="QLabel" name="label_16">
       <property name="text">
-       <string>purpose</string>
+       <string>Purpose</string>
       </property>
      </widget>
     </item>
@@ -446,7 +387,7 @@
     <item row="2" column="0">
      <widget class="QLabel" name="label_17">
       <property name="text">
-       <string>total cash</string>
+       <string>Total Cash</string>
       </property>
      </widget>
     </item>
@@ -460,7 +401,7 @@
     <item row="3" column="0">
      <widget class="QLabel" name="label_18">
       <property name="text">
-       <string>total worth</string>
+       <string>Total Worth</string>
       </property>
      </widget>
     </item>
@@ -474,7 +415,7 @@
     <item row="4" column="0">
      <widget class="QLabel" name="label_19">
       <property name="text">
-       <string>Total balance</string>
+       <string>Total Balance</string>
       </property>
      </widget>
     </item>
